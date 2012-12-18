@@ -1,0 +1,19 @@
+Often you need to download and extract archives from the internet, e.g. to install Drupal modules. Therefore you download the archive, extract it and remove the original archive. Using modern[tm] UNIX pipes you can directly pipe it to tar; therefore you don't need to save and remove the archive.
+
+Example:
+{{{
+user@host> wgetar http://ftp.drupal.org/files/projects/views-7.x-3.5.tar.gz
+}}}
+
+See the result:
+{{{
+user@host> ls -R
+.:
+views
+
+./views:
+css
+D7UPGRADE.txt
+documentation-standards.txt
+(and so on)
+}}}
