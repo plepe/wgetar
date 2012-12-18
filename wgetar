@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# Does a wget to an URL and pipes file to tar to extract archive
+# Downloads an archive from an URL and pipes it to tar for extraction
 wget -O - $@ | tar xvzf -
